@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marcusng_instagram/screens/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instagram Clone',
       debugShowCheckedModeBanner: false,
-      home: LoginSreen(),
+      home: LoginScreen(),
     );
   }
 }
