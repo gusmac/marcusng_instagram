@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:marcusng_instagram/screens/feed_screen.dart';
+import 'package:marcusng_instagram/screens/home_screen.dart';
 import 'package:marcusng_instagram/screens/login_screen.dart';
 import 'package:marcusng_instagram/screens/signup_screen.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       stream: FirebaseAuth.instance.onAuthStateChanged,
       builder: (BuildContext context, snapshot) {
         if (snapshot.hasData) {
-          return FeedScreen();
+          return HomeScreen();
         } else {
           return LoginScreen();
         }
