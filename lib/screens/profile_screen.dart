@@ -9,11 +9,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Profile',
-        ),
-      ),
-    );
+        backgroundColor: Colors.white,
+        body: ListView(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage:
+                      NetworkImage('https://i.redd.it/dmdqlcdpjlwz.jpg'),
+                )
+              ],
+            )
+          ],
+        ));
   }
 }
